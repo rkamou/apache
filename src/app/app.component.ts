@@ -13,9 +13,9 @@ export class AppComponent {
 
   }
 
-  ngOnInit(): void {
-    this.loadHomePage();
-  }
+  // ngOnInit(): void {
+  //
+  // }
 
   loadHomePage() {
     this._router.navigate([{outlets: {outlet: ['login']}}], {skipLocationChange: true});

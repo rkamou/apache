@@ -10,6 +10,7 @@ export class ItemsAndCategoriesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    // alert('Items And Categories Component');
   }
 
 }
