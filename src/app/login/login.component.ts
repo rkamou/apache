@@ -23,6 +23,8 @@ export class LoginComponent implements OnInit {
   constructor(private auth: AuthService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
+    if (this.auth.isAuthenticated()) {this.router.navigateByUrl('/admin', {skipLocationChange: true}); }
+
     this.username  = '';
     this.password = '';
   }
